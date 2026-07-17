@@ -1,6 +1,6 @@
 # Pranav — Portfolio
 
-Supreme-inspired personal portfolio built with Next.js App Router.
+personal portfolio built with Next.js App Router.
 
 ## Stack
 
