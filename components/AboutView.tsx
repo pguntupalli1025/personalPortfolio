@@ -97,7 +97,7 @@ export function AboutView() {
               <span className="normal-case">IBM</span> fde · fall 2026
             </p>
           </div>
-          <p className="max-w-md text-[13px] leading-[1.75] text-fg/90 sm:text-[14px]">
+          <p className="max-w-md text-[13px] leading-[1.75] text-fg sm:text-[14px]">
             {ABOUT_BIO}
           </p>
         </div>

@@ -36,6 +36,7 @@ export const FEATURED_REPO_NAMES = [
   "LostChain",
   "viro",
   "cs3200-FairShare",
+  "ramMinimizer",
 ] as const;
 
 /**
@@ -50,6 +51,8 @@ export const PROJECT_DESCRIPTIONS: Record<
   viro: "VIRO (Viral Intelligence and Response Orchestrator): AI triage, routing, and surveillance for pandemic response. Patients get GPT-4o triage tiers. Providers get live network graphs, pattern detection, and outbreak forecasts. Next.js, Supabase, OpenAI.",
   "cs3200-FairShare":
     "RoommateSync: shared living platform for splitting expenses, chores, groceries, and maintenance across roommates, household leads, and property managers. Streamlit UI, Flask API, MySQL.",
+  ramMinimizer:
+    "Chrome extension that detects and discards inactive tabs to cut memory usage by about 40%. Uses the Chrome Extensions API with DOM state checks so active tabs stay safe, plus a popup UI for live memory visibility.",
 };
 
 /** Badge shown on the card (outside the dropdown) */
@@ -68,6 +71,7 @@ export const PROJECT_LANGUAGES: Record<
   LostChain: { name: "TypeScript", color: "#3178c6" },
   viro: { name: "TypeScript", color: "#3178c6" },
   "cs3200-FairShare": { name: "Python", color: "#3572A5" },
+  ramMinimizer: { name: "JavaScript", color: "#f1e05a" },
 };
 
 const PLACEHOLDER_PROJECTS: ProjectRepo[] = [
@@ -93,6 +97,14 @@ const PLACEHOLDER_PROJECTS: ProjectRepo[] = [
     url: "https://github.com/pguntupalli1025/cs3200-FairShare",
     stargazerCount: 0,
     primaryLanguage: PROJECT_LANGUAGES["cs3200-FairShare"],
+    badge: null,
+  },
+  {
+    name: "ramMinimizer",
+    description: PROJECT_DESCRIPTIONS.ramMinimizer,
+    url: "https://github.com/pguntupalli1025/ramMinimizer",
+    stargazerCount: 0,
+    primaryLanguage: PROJECT_LANGUAGES.ramMinimizer,
     badge: null,
   },
 ];

@@ -19,7 +19,7 @@ function ProjectCard({
 
   return (
     <article
-      className={`texture-panel relative flex flex-col border p-3 transition-colors sm:p-4 ${
+      className={`relative flex flex-col border bg-bg p-3 transition-colors sm:p-4 ${
         open
           ? "border-accent/50 bg-accent/[0.04]"
           : "border-dim hover:border-muted"
@@ -36,7 +36,7 @@ function ProjectCard({
 
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 space-y-1">
-          <p className="text-[10px] tabular-nums tracking-wide text-dim">
+          <p className="text-[10px] tabular-nums tracking-wide text-muted">
             project · {num}
           </p>
           <h2 className="text-sm font-medium text-fg">{project.name}</h2>
@@ -55,7 +55,7 @@ function ProjectCard({
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
-        className={`mt-3 flex w-full items-center justify-between gap-3 border-t border-dim pt-3 text-left font-mono text-[11px] lowercase outline-none transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
+        className={`mt-3 flex w-full items-center justify-between gap-3 border-t border-hairline pt-3 text-left font-mono text-[11px] lowercase outline-none transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
           open ? "text-accent" : "text-muted hover:text-accent"
         }`}
       >
@@ -74,7 +74,7 @@ function ProjectCard({
       </button>
 
       {open ? (
-        <p className="mt-2 border-l border-accent/50 pl-3 text-xs leading-relaxed text-muted">
+        <p className="mt-2 border-l border-accent/50 pl-3 text-xs leading-relaxed text-fg">
           {project.description ?? "No description yet."}
         </p>
       ) : null}
@@ -92,7 +92,7 @@ function ProjectCard({
             {project.primaryLanguage.name}
           </span>
         ) : (
-          <span className="text-[11px] text-dim">-</span>
+          <span className="text-[11px] text-muted">-</span>
         )}
         <a
           href={project.url}

@@ -14,10 +14,10 @@
 /* Light theme — applied to inner pages (everything but the home splash) */
 .theme-light {
   --color-bg: #ffffff;
-  --color-fg: #141414;
-  --color-muted: #6a6a6a;
-  --color-dim: #b5b5b5;
-  --color-hairline: #e4e4e4;
+  --color-fg: #000000;
+  --color-muted: #222222;
+  --color-dim: #555555;
+  --color-hairline: #cfcfcf;
   background: var(--color-bg);
   color: var(--color-fg);
 }
