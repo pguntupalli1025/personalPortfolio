@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     template: "%s - Pranav",
   },
   description: "Personal portfolio of Pranav - CS student.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({
